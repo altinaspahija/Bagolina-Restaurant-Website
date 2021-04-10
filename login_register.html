@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login/Sign up</title>
+    <!-- External CSS file -->
+    <link rel="stylesheet" href="/css/login_register_form.css">
+    <!-- Font Awesome 5 Icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="inner-box" id="card">
+                <div class="card-front">
+                    <h2>LOGIN</h2>
+                    <form action="/registered_user/home_registered_user.html">
+                        <input type="text" name="username" class="input-box" id="username" placeholder="Username"
+                            required>
+                        <input type="password" name="password" class="input-box" placeholder="Password" required>
+                        <button type="submit" class="submit-btn" id="login" value="submit"
+                            onclick="return check()">LOGIN</button>
+                    </form>
+                    <button type="button" class="signup-btn" onclick="openRegister()">I am new here</button>
+                    <p><button class="w3-btn w3-orange w3-xlarge" onclick="history.back()">Home<i
+                                class="w3-margin-left fa fa-home"></i></button></p>
+                </div>
+                <div class="card-back">
+                    <h2>REGISTER</h2>
+                    <form>
+                        <input type="text" name=signUpUser id="signUpUser" class="input-box" placeholder="Username"
+                            required>
+                        <input type="email" class="input-box" placeholder="Email address" required>
+                        <input type="password" name="signUpPassword" id="signUpPassword" class="input-box"
+                            placeholder="Password" required>
+                        <button type="submit" class="submit-btn" id="signUp" onclick="store()">REGISTER</button>
+                    </form>
+                    <button type="button" class="signup-btn" onclick="openLogin()">I have an account</button>
+                    <p><button class="w3-btn w3-orange w3-xlarge" onclick="history.back()">Home<i
+                                class="w3-margin-left fa fa-home"></i></button></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- External JS file -->
+    <script src="/javascript/login_register_form.js"></script>
+</body>
+
+</html>

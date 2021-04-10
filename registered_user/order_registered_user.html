@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <!-- Make responsive web design -->
+  <!-- The browser will (probably) render the width of the page at the width of its own screen -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Browser's title bar -->
+  <title>BAGOLINA</title>
+  <!-- External CSS file -->
+  <link rel="stylesheet" href="/css/style.css">
+  <!-- Font Awesome 5 Icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+  <!-- JS file to include HTML page -->
+  <script src="https://www.w3schools.com/lib/w3.js"></script>
+</head>
+
+<body>
+  <div class="loader">
+  </div>
+  <div w3-include-html="/header_registered_user.html"></div>
+  <section class="order">
+    <div class="order-head">
+      <h2>Order food</h2>
+      </div>
+      <div class="row">
+        <div class="popup center">
+          <div class="icon">
+            <i class="fa fa-check"></i>
+          </div>
+          <div class="title">
+            Your food has been ordered!!!
+          </div>
+          <div class="description">
+            You will receive within 15 minutes!
+          </div>
+          <div class="dismiss-btn">
+            <button id="dismiss-popup-btn">
+              OK
+            </button>
+          </div>
+        </div>
+        <div class="form">
+        <form name="Form">
+          <input type="text" name="name" placeholder="Write your name" class="form" required>
+          <input type="email" name="email" placeholder="Write your email address" class="form" required>
+          <input type="number" name="number" placeholder="Write your number" class="form" required>
+          <textarea class="form address" name="address" placeholder="Write your address" required></textarea>
+          <textarea class="form food" name="food" placeholder="Food you want to order" required></textarea>
+        </form>
+        <input type="button" value="Order now" id="open-popup-btn" class="btn btn-default" onclick="showPopUp()">
+        </div>
+        <div class="image">
+          <img src="/images/orderNow.PNG" alt="Order food photo">
+        </div>
+      </div>
+  </section>
+  <div w3-include-html="/footer.html"></div>
+  <script>
+    w3.includeHTML();
+  </script>
+  <!-- External JS file -->
+  <script type="text/javascript" src="/javascript/main.js"></script>
+</body>
+
+</html>
